@@ -1,0 +1,24 @@
+<launch>
+  
+  <!-- Launch rosserial on chipkit -->
+  <include file="$(find agv_ipleiria)/launch/chipkit.launch">
+  </include>
+  
+  <!-- Launch laser -->
+  <include file="$(find agv_ipleiria)/launch/laser.launch">
+  </include>
+  
+
+  
+
+
+  
+  
+  
+  
+  <!-- Run our application -->
+<!--  <node pkg="agv_ipleiria" type="ipleiria_demo" name="ipleiria_demo" required="false" respawn="true" cwd="node"/>
+
+-->
+
+</launch>

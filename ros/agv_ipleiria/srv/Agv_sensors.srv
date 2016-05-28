@@ -1,0 +1,35 @@
+# AGV sensor service. 
+# This message is  appropriate for Bumper, Sonar and Infrared devices sensors.
+# V0.1 - 18/11/2015 - @ESTG - IPLEIRIA
+# V0.2 - 25/11/2015 - @ESTG - IPLEIRIA
+
+
+# Radiation type enums
+uint8 ULTRASOUND = 0
+uint8 INFRARED = 1
+uint8 BUMPER = 2
+
+uint8 INACTIVE = 0
+
+
+uint8 radiation_type    	# the type of radiation used by the sensor
+				# (sound, IR, etc) [enum] 
+uint8 radiation_state   	# sensor type state (ON/OFF)
+uint8 resolution	    	# resolution value, Infrared use only 
+uint8 update_frequency		# defines frequency on updating the information
+				# must be lower than 'Update_freq' on the 'AGV_main' service 
+
+
+uint8[16] ranges	   	# sensor state (ON/OFF)
+  
+---
+
+uint8 radiation_type    	# the type of radiation used by the sensor
+				# (sound, IR, etc) [enum] 
+uint8 radiation_state   	# sensor type state (ON/OFF)
+uint8 resolution	    	# resolution value, Infrared use only 
+uint8 update_frequency		# defines frequency on updating the information
+				# must be lower than 'Update_freq' on the 'AGV_main' service 
+
+
+uint8[16] ranges	   	# sensor state (ON/OFF)ON/OFF)

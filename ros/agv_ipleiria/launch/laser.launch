@@ -1,0 +1,19 @@
+<launch>
+  
+  
+<!--LASER -->
+	<group ns="AGVipleiria">
+	<!-- Open the laser. See http://wiki.ros.org/urg_node for more details. -->
+    <node pkg="urg_node" type="urg_node" name="Laser" required="false" respawn="true" respawn_delay="10" />
+
+    
+    <node pkg="tf" type="static_transform_publisher" name="laser_tf" args="0.0 0.0 0.0 0.0 0.0 0.0 base_link laser 100" required="false" respawn="true"/> 
+  </group>
+
+  
+  <!-- Run our application -->
+<!--  <node pkg="AGVipleiria" type="ipleiria_demo" name="ipleiria_demo" required="false" respawn="true" cwd="node"/>
+
+-->
+
+</launch>

@@ -1048,7 +1048,7 @@ void Turret_Rotation(float desired_turret_pose) {
     short aux = (short) (desired_turret_pose * 1000);
     aux = clipValue(aux,-3142,3142);
 
-    nh.logwarn(". Turret rotation .");
+    nh.logdebug(". Turret rotation .");
     
 
     Wire.beginTransmission(TURRET_ADDRESS); // transmit to device
@@ -1071,7 +1071,7 @@ void Turret_Rotation(float desired_turret_pose) {
 // ################################################################
 void Turret_Stop() {
 
-    nh.logwarn(". Turret Stop .");
+    nh.logdebug(". Turret Stop .");
     Wire.beginTransmission(TURRET_ADDRESS); // transmit to device
     Wire.write('s');
     Wire.write(1);
@@ -1085,7 +1085,7 @@ void Turret_Stop() {
 // ################################################################
 void Turret_Homing() {
 
-    nh.logwarn(". Turret Homing .");
+    nh.logdebug(". Turret Homing .");
     Wire.beginTransmission(TURRET_ADDRESS); // transmit to device
     Wire.write('h');
     Wire.write(1);

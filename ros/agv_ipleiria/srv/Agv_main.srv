@@ -1,0 +1,20 @@
+# AGV main service. This contains information such as to activate power, controllers enable, Ros Update Frequency, Homing command.
+# V0.0 - 25/11/2015 - @ESTG - IPLEIRIA
+
+
+uint8 Motor_power			# bool use On/Off
+uint8 Motor_enable			# Motors Controllers Enable
+uint8 Update_freq			# ROS data update frequency
+uint8 Homing				# Homing process
+					# 0 - None
+					# 1 - Wheels
+					# 2 - Turret					
+---
+
+uint8 Motor_power			# bool use On/Off
+uint8 Motor_enable			# Motors Controllers Enable
+uint8 Update_freq			# ROS data update frequency
+uint8 Homing				# Homing process
+					# 0 - None
+					# 1 - Wheels
+					# 2 - Turret	
